@@ -12,6 +12,7 @@ import {isIphoneX} from 'react-native-iphone-x-helper';
 const Tab = createBottomTabNavigator();
 
 const TabBarCustomButton = ({accessibilityState, children, onPress}) => {
+  console.log(onPress);
   var isSelected = accessibilityState.selected;
   if (isSelected) {
     return (
